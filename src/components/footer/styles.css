@@ -1,0 +1,59 @@
+aside {
+  font-size: 18px;
+  color: #0088bb;
+  border-top: 1px solid #f5f5f5;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  background-color: #fff;
+}
+
+.footer-wrapper div {
+  max-width: 1080px;
+  display: flex;
+  margin: auto;
+}
+
+.footer-menu {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.footer-menu a {
+  color: #0088bb;
+}
+
+.footer-follow {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-follow span {
+  padding-bottom: 10px;
+}
+
+.footer-follow a {
+  font-size: 20px;
+  color: #000000;
+}
+
+.footer-follow__socials {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-rights {
+  width: 52%;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+
+  margin: auto;
+  padding: 20px 0;
+}

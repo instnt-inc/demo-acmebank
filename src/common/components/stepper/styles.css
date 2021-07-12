@@ -1,0 +1,7 @@
+#loader {
+    padding: 1px !important;
+}
+
+#loader svg {
+    padding-top: 5px;
+}

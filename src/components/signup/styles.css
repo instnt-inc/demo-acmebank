@@ -1,0 +1,57 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 60%;
+  min-height: 550px;
+  max-width: 1080px;
+  margin: 50px auto 120px;
+  padding: 20px 30px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 4px 4px 89px -29px rgba(0, 136, 187, 0.2);
+  -moz-box-shadow: 4px 4px 89px -29px rgba(0, 136, 187, 0.2);
+  box-shadow: 4px 4px 89px -29px rgba(0, 136, 187, 0.2);
+}
+
+.hide {
+  display: none!important;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+@media screen and (max-width: 960px) {
+  .loader {
+    left: 43vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .loader {
+    left: 40vw;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .MuiPaper-root {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .MuiPaper-root {
+    margin-left: -30px;
+  }
+}

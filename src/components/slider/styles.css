@@ -1,0 +1,150 @@
+
+.text-bubble {
+  position: fixed;
+  top: 456.5px;
+  right: 563.5px;
+  margin-top: -7.5em;
+  z-index: 2;
+  opacity: 0;
+}
+
+.text-bubble {
+  display: table;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.10s;
+  color: white;
+  background-color: #08B;
+  border-radius: 5px;
+  border-color: #08B;
+  box-shadow: rgb(0 0 0) 1em 2em 1em;
+  padding: 1.5em;
+  margin: 1em;
+  width: 18em;
+  font-size: 0.8em;
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 20px 15px 0;
+  border-color: inherit;
+  z-index: -1;
+}
+
+.text-bubble-right .arrow {
+  left: -5px;
+  transform: rotate(
+          45deg
+  ) scale3d(1,1,1);
+}
+
+.text-bubble-left .arrow {
+  right: -5px;
+  transform: rotate(
+          -45deg
+  ) scale3d(1,1,1);
+}
+
+.text-bubble-left {
+  right: calc(calc(100% + 280px) / 2);
+}
+
+.text-bubble-right {
+  left: calc(calc(100% + 300px) / 2);
+}
+
+.text-bubble .text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+.text-bubble h3 {
+  font-weight: 400;
+  color: white;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.text-bubble {
+  position: fixed;
+  top: 456.5px;
+  margin-top: -7.5em;
+  z-index: 2;
+}
+
+
+#floating-phone {
+  display: block;
+  position: fixed;
+  top: 456.5px;
+  left: calc(50% - 125px);
+  margin-top: -255px;
+}
+
+#floating-phone img {
+  height: 510px; width: 250px;
+}
+
+.phone-screen {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity ease-in-out 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: rgb(0 0 0) 1em 2em 1em;
+  border-radius: 32px;
+}
+
+.stucked-top #floating-phone, .stucked-top .text-bubble,
+.stucked-bottom #floating-phone, .stucked-bottom .text-bubble {
+  display: block;
+  position: absolute !important;
+}
+
+.stucked-top #floating-phone, .stucked-top .text-bubble {
+  top: 300px !important;
+}
+
+.stucked-bottom #floating-phone, .stucked-bottom .text-bubble {
+  top: 2695px !important;
+}
+
+.videoTag {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media only screen and (max-width: 845px) {
+  #floating-phone {
+    top: 550px;
+  }
+
+  .text-bubble {
+    top: 200px;
+    left: calc(50% - 145px);
+  }
+
+  .stucked-top #floating-phone, .stucked-top .text-bubble {
+    top: 525px !important;
+  }
+
+  .stucked-top .text-bubble,
+  .stucked-bottom .text-bubble {
+    margin-top: -460px;
+  }
+
+  .arrow {
+    top: 100%;
+    margin-top: -20px;
+    left: 45% !important;
+    transform: rotate(
+            45deg
+    ) scale3d(1,1,1);
+  }
+}

@@ -1,0 +1,25 @@
+.card {
+    margin-bottom: 2.5rem;
+    background-color: #eaeffd;
+    border: 1px solid rgba(234, 239, 253, .25);
+    padding: 10px;
+}
+
+.card-title {
+    margin: 10px 0 !important;
+}
+
+aside .welcome {
+    color: black;
+}
+
+aside .welcome h1 {
+    font-weight: 500 !important;
+    line-height: 1em !important;
+    padding-bottom: 10px;
+}
+
+p.lead {
+    margin-bottom: 2.5rem !important;
+    font-size: 14px !important;
+}

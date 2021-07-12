@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html {
+  font-size: 14px !important;
+}
+
+.header {
+  width: 100%;
+  font-family: "Open Sans", serif;
+  padding: 10px 0;
+}
+
+.header__container {
+  width: 70%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 40px;
+  color: #0088bb;
+  font-weight: 900;
+}
+
+.header__logo a,
+.header__logo a:visited {
+  color: #0088bb;
+}
+
+.top-menu-nav .top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu .menu-item {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  padding-right: 22px;
+}
+
+.menu-item a {
+  color: #000000;
+}
+
+.menu-item .login {
+  border: 1px solid #000;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+
+.menu-item .login:hover {
+  color: #000000;
+}
+
+.menu-item .signup {
+  border: none;
+  color: white;
+  background: #0088bb;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #0088bb;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  right: 0 !important;
+  top: 80px !important;
+  height: 300px !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  left: 0px;
+  top: 0px;
+  opacity: 0 !important;
+}
+
+.et_mobile_menu a {
+  display: block;
+  padding: 10px 5%;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+  color: #666;
+}
+
+@media only screen and (max-width: 778px) {
+  .bm-burger-button {
+    display: block;
+  }
+
+  .top-menu-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 779px) {
+  .bm-menu-wrap {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 779px) and (max-width: 1078px) {
+  .header__container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
