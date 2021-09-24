@@ -49,13 +49,10 @@ Now that the components have been installed and imported, it's time to set up th
 
 ```jsx
 function App () {
-  return (
-      <div className= 'App'>
-        <InstntSignUp sandbox
-         formId= 'v879876100000'/>
-      </div>
-    )
-  }
+  scripts": {
+    "start": "export REACT_APP_FORM_ID=v847998100000 ; react-scripts start",
+    "build": "react-scripts build"
+  },
 ```
 
 ### Parameters
@@ -101,17 +98,16 @@ const onResponse = (error, data) => {
   console.log(`Decision: ${data['decision']}`)
 }
 
-function App () {
-  return (
-      <div className= 'App'>
-        <InstntCustomSignUp
-         sandbox
-         formId= 'v879876100000'/>
-         redirect={false}
-         onResponse={onResponse}
-      </div>
-    )
-  }
+return (
+    <div className='App'>
+      <AppBar position='static'>
+        <Tabs value={value} onChange={handleChange}>
+          <Tab label='Standard Form' />
+          <Tab label='Custom Form' />
+        </Tabs>
+      </AppBar>
+      <TabPanel value={value} index={0}>
+      <InstntSignUp sandbox formId={process.env.REACT_APP_FORM_ID} />
 ```
 
 ## Submit Workflow to Instnt Using the JavaScript Helper Function
